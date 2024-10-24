@@ -1,4 +1,4 @@
-package abhishekse2etestsprophecyioteam.projectautomationchetanscalareleaseapi1729791449056.gems
+package __PACKAGE_NAME__
 
 import io.prophecy.gems._
 import io.prophecy.gems.componentSpec.{ColumnsUsage, ComponentSpec}
@@ -11,9 +11,9 @@ import play.api.libs.json.{Json, OFormat}
 
 class Reformat extends ComponentSpec {
 
-  val name: String = "test_dummy_gem1729791449056"
-  val category: String = "Custom"
-  val gemDescription: String = "Edits column names or values using expressions."
+  val name: String = "__NAME__"
+  val category: String = "__CATEGORY__"
+  val gemDescription: String = "Edited Description for release api tests"
   val docUrl: String = "https://docs.prophecy.io/low-code-spark/gems/transform/reformat/"
 
   type PropertiesType = ReformatProperties
