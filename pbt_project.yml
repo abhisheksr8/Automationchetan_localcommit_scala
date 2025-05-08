@@ -1,0 +1,145 @@
+name: Project-Automationchetan_scala_RELEASE_API_1746705187153
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationchetanscalareleaseapi1746705187153
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2025-05-08 11:54:26'
+pipelines:
+  pipelines/Pipeline-Automationchetan_RELEASE_API_1746705187153:
+    name: Pipeline-Automationchetan_RELEASE_API_1746705187153
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-05-08 11:56:46'
+    datasets:
+      inputs:
+      - datasets/Project-Automationchetan_scala_RELEASE_API_1746705187153_dataSet
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/Project-Automationchetan_scala_RELEASE_API_1746705187153_dataSet:
+    name: Project-Automationchetan_scala_RELEASE_API_1746705187153_dataSet
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2025-05-08 12:00:22'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 3
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2025-05-08 12:00:22'
+templates: {}
+jobs:
+  jobs/Project-Automationchetan_scala_RELEASE_API_1746705187153_RELEASE_API_JOB:
+    name: Project-Automationchetan_scala_RELEASE_API_1746705187153_RELEASE_API_JOB
+    description: ''
+    fabricUID: 3
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0/1 * * ? * * 2090
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/Pipeline-Automationchetan_RELEASE_API_1746705187153
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-05-08 12:02:23'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems:
+    gems/Test_Release_Trigger_Gem:
+      name: Test_Release_Trigger_Gem
+      category: Custom
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - src/main/scala/abhishekse2etestsprophecyioteam/projectautomationchetanscalareleaseapi1746705187153/gems/Test_Release_Trigger_Gem.scala
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2025-05-08 11:57:58'
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-05-08 11:54:26'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-05-08T11:55:20.071Z'
+  name: ProphecyLibsScala
+  version: 8.9.1-SNAPSHOT
+  id: '819336988'
+  createdAt: '2025-05-08T11:54:26.54655Z'
+  type: plibMaven
+  enabled: true
+  entity: Project
+  description: Default dependency for Prophecy Libs
+  scope: Project
+  exclusions: []
+  editable: true
+  __path: '[0]'
+projectDependencies:
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/oimECIpO_team_2/oimECIpO_project_1.git&subPath=
+    version: 0.2.6.2
+    isDefault: true
+    author: null
+    createdAt: '2025-05-08 11:54:09'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/oimECIpO_team_2/oimECIpO_project_2.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2025-05-08 11:54:09'
+  '14262':
+    projectUID: 14262
+    projectName: scala_project
+    repositoryPath: gitUri=http://gitserver:3000/y26UTxfT_team_5/CRHsPoxm_project_14262.git&subPath=
+    version: scala_project/v4.0.0.0
+    isDefault: false
+    author: null
+    createdAt: '2025-05-08 11:54:09'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
